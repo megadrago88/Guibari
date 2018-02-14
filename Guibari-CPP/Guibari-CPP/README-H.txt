@@ -1,4 +1,4 @@
-The I/O folder holds all the file headers needed for:
+This I/O folder holds all the file headers needed for:
 
 User mappings:
 	Unknown controllers added via integrated tool

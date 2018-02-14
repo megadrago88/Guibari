@@ -19,14 +19,17 @@
     <Filter Include="Header Files\I/O">
       <UniqueIdentifier>{95b13cf3-945e-4c4e-a595-33254201beaa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\I/O\exceptions">
+      <UniqueIdentifier>{8c3da7f8-2862-465d-8c0d-0b18f45d6fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\I/O\exceptions\internal">
+      <UniqueIdentifier>{7fb95a89-99d0-4b70-b24e-9c7cf5925ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\I/O\exceptions\external">
+      <UniqueIdentifier>{7be4ce53-1fee-4e1c-8392-d45417ea2cb0}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Header Files\I/O\mapping">
       <UniqueIdentifier>{a8beb8df-7a0d-4bae-ae59-ffccff3f51f7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\config">
-      <UniqueIdentifier>{2396d8b9-3e70-4d4b-9688-1b2d7ba20973}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\config\startup">
-      <UniqueIdentifier>{c247186f-06be-48f6-8bd8-92a84c925c3d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\I/O\mapping\user_mappings">
       <UniqueIdentifier>{f6fb4d9b-dc1e-41d9-b123-a94728977fd5}</UniqueIdentifier>
@@ -37,14 +40,11 @@
     <Filter Include="Header Files\I/O\mapping\user_mappings\profiles">
       <UniqueIdentifier>{4db7890a-4598-44be-be01-b05e0863261b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\I/O\exceptions">
-      <UniqueIdentifier>{8c3da7f8-2862-465d-8c0d-0b18f45d6fd6}</UniqueIdentifier>
+    <Filter Include="Header Files\I/O\config">
+      <UniqueIdentifier>{2396d8b9-3e70-4d4b-9688-1b2d7ba20973}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\I/O\exceptions\internal">
-      <UniqueIdentifier>{7fb95a89-99d0-4b70-b24e-9c7cf5925ca3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\exceptions\external">
-      <UniqueIdentifier>{7be4ce53-1fee-4e1c-8392-d45417ea2cb0}</UniqueIdentifier>
+    <Filter Include="Header Files\I/O\config\startup">
+      <UniqueIdentifier>{c247186f-06be-48f6-8bd8-92a84c925c3d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
