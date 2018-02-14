@@ -3,10 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Guibari"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="350" Width="525" 
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto">
+    <DockPanel HorizontalAlignment="Left" Height="36" LastChildFill="False" VerticalAlignment="Top" Width="517" Background="DarkGray">
+        <Menu Height="36" VerticalAlignment="Top" Width="100"/>
+        <Menu Height="36" VerticalAlignment="Top" Width="100"/>
+        <Menu Height="36" VerticalAlignment="Top" Width="100"/>
+        <Menu Height="36" VerticalAlignment="Top" Width="100"/>
+    </DockPanel>
 </Window>
