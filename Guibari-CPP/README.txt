@@ -13,4 +13,5 @@ Goals:
 		6. Wait for (Run Shibari {version}) button to be pressed or for (Configure controller) button
 		7. Procede depending on action (8 if run {?} if configure)
 		8. Open shibari and send configuration to filter
+		9. Display connections and other useful data to the user
 	Steps done: none so far
