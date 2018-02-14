@@ -17,3 +17,6 @@ startup::startup()
 startup::~startup()
 {
 }
+int main(){
+	return 0;
+}
