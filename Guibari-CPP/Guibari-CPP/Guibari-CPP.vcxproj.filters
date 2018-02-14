@@ -13,80 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\imgui">
-      <UniqueIdentifier>{0e5e7d90-81aa-4556-a47c-f82949e67c59}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O">
-      <UniqueIdentifier>{95b13cf3-945e-4c4e-a595-33254201beaa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\exceptions">
-      <UniqueIdentifier>{8c3da7f8-2862-465d-8c0d-0b18f45d6fd6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\exceptions\internal">
-      <UniqueIdentifier>{7fb95a89-99d0-4b70-b24e-9c7cf5925ca3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\exceptions\external">
-      <UniqueIdentifier>{7be4ce53-1fee-4e1c-8392-d45417ea2cb0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\mapping">
-      <UniqueIdentifier>{a8beb8df-7a0d-4bae-ae59-ffccff3f51f7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\mapping\user_mappings">
-      <UniqueIdentifier>{f6fb4d9b-dc1e-41d9-b123-a94728977fd5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\mapping\user_mappings\controllers_added">
-      <UniqueIdentifier>{85e20a32-982a-45ff-9b86-301e28118bbe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\mapping\user_mappings\profiles">
-      <UniqueIdentifier>{4db7890a-4598-44be-be01-b05e0863261b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\config">
-      <UniqueIdentifier>{2396d8b9-3e70-4d4b-9688-1b2d7ba20973}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\I/O\config\startup">
-      <UniqueIdentifier>{c247186f-06be-48f6-8bd8-92a84c925c3d}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GB_CPP_GVARS_RO.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GB_CPP_GVARS_RW.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\imgui\stb_truetype.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\imgui\stb_textedit.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\imgui\stb_rect_pack.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\imgui\imgui_internal.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\imgui\imgui.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\imgui\imconfig.h">
-      <Filter>Header Files\imgui</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\imgui\imgui.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\imgui\imgui_demo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\imgui\imgui_draw.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="README.txt">
-      <Filter>Header Files\I/O</Filter>
-    </Text>
+    <Text Include="exceptions\EEGoals.txt" />
   </ItemGroup>
 </Project>

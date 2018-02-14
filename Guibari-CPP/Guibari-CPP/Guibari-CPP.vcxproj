@@ -115,22 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\imgui\imconfig.h" />
-    <ClInclude Include="..\..\..\imgui\imgui.h" />
-    <ClInclude Include="..\..\..\imgui\imgui_internal.h" />
-    <ClInclude Include="..\..\..\imgui\stb_rect_pack.h" />
-    <ClInclude Include="..\..\..\imgui\stb_textedit.h" />
-    <ClInclude Include="..\..\..\imgui\stb_truetype.h" />
-    <ClInclude Include="GB_CPP_GVARS_RO.h" />
-    <ClInclude Include="GB_CPP_GVARS_RW.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\imgui\imgui.cpp" />
-    <ClCompile Include="..\..\..\imgui\imgui_demo.cpp" />
-    <ClCompile Include="..\..\..\imgui\imgui_draw.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="README.txt" />
+    <Text Include="exceptions\EEGoals.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
