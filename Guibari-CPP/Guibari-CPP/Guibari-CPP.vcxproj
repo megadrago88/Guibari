@@ -121,6 +121,8 @@
     <ClInclude Include="..\..\..\imgui\stb_rect_pack.h" />
     <ClInclude Include="..\..\..\imgui\stb_textedit.h" />
     <ClInclude Include="..\..\..\imgui\stb_truetype.h" />
+    <ClInclude Include="GB_CPP_GVARS_RO.h" />
+    <ClInclude Include="GB_CPP_GVARS_RW.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\imgui\imgui.cpp" />

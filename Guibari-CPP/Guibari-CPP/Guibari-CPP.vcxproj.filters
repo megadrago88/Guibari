@@ -33,6 +33,12 @@
     <ClInclude Include="..\..\..\imgui\stb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GB_CPP_GVARS_RO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GB_CPP_GVARS_RW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\imgui\imgui.cpp">
