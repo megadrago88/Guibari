@@ -15,6 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="exceptions\EEGoals.txt" />
+    <Text Include="IO\Headers\README-H.txt" />
+    <Text Include="IO\Source\README-S.txt" />
+    <Text Include="exceptions\EGoals.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="startup\Source\startconfiger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptions\Source\startup_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

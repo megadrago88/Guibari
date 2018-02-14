@@ -115,7 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="exceptions\EEGoals.txt" />
+    <Text Include="exceptions\EGoals.txt" />
+    <Text Include="IO\Headers\README-H.txt" />
+    <Text Include="IO\Source\README-S.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exceptions\Source\startup_ex.cpp" />
+    <ClCompile Include="startup\Source\startconfiger.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
