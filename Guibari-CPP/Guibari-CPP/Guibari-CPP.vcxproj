@@ -121,7 +121,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="exceptions\Source\startup_ex.cpp" />
-    <ClCompile Include="startup\Source\startconfiger.cpp" />
+    <ClCompile Include="pregui\Source\startup.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pregui\Headers\startup.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

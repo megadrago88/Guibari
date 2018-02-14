@@ -20,11 +20,16 @@
     <Text Include="exceptions\EGoals.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="startup\Source\startconfiger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="exceptions\Source\startup_ex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pregui\Source\startup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pregui\Headers\startup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
