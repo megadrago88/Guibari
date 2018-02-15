@@ -119,6 +119,8 @@
     <Text Include="imgui\TODO.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Config\Profiler\gui\profiler_gui.cpp" />
+    <ClCompile Include="Config\Setup\gui\setup_gui.cpp" />
     <ClCompile Include="Config\Setup\setup_ex.cpp" />
     <ClCompile Include="exceptions\Source\startup_ex.cpp" />
     <ClCompile Include="Externalinfo\IO\IO_ex.cpp" />
@@ -127,11 +129,13 @@
     <ClCompile Include="imgui\Source\imgui_demo.cpp" />
     <ClCompile Include="imgui\Source\imgui_draw.cpp" />
     <ClCompile Include="Config\config_ex.cpp" />
+    <ClCompile Include="Main\gui\maingui.cpp" />
     <ClCompile Include="Main\Logger\Logger_ex.cpp" />
     <ClCompile Include="Config\Profiler\profiler_ex.cpp" />
     <ClCompile Include="Main\pregui\pregui_ex.cpp" />
     <ClCompile Include="Externalinfo\IO\Source\config_file_IO.cpp" />
     <ClCompile Include="Main\pregui\Source\startup.cpp" />
+    <ClCompile Include="Main\main_ex.cpp" />
     <ClCompile Include="pregui\Source\startup.cpp" />
     <ClCompile Include="Main\Logger\Source\startlogger.cpp" />
   </ItemGroup>

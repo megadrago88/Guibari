@@ -19,5 +19,16 @@ startup::~startup()
 }
 
 int main(){
+	
+	//start logger
+
+	//check dir
+	
+	//checks for errors
+
+	//if all good start gui
+
+	//else returns the error and stops
+
 	return 0;
 }
