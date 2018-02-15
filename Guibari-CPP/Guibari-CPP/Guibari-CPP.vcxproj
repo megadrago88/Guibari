@@ -116,15 +116,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="exceptions\EGoals.txt" />
+    <Text Include="imgui\LICENSE.txt" />
+    <Text Include="imgui\TODO.txt" />
     <Text Include="IO\Headers\README-H.txt" />
     <Text Include="IO\Source\README-S.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="exceptions\Source\startup_ex.cpp" />
+    <ClCompile Include="imgui\Source\imgui.cpp" />
+    <ClCompile Include="imgui\Source\imgui_demo.cpp" />
+    <ClCompile Include="imgui\Source\imgui_draw.cpp" />
     <ClCompile Include="pregui\Source\startup.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="imgui\Headers\imconfig.h" />
+    <ClInclude Include="imgui\Headers\imgui.h" />
+    <ClInclude Include="imgui\Headers\imgui_internal.h" />
+    <ClInclude Include="imgui\Headers\stb_rect_pack.h" />
+    <ClInclude Include="imgui\Headers\stb_textedit.h" />
+    <ClInclude Include="imgui\Headers\stb_truetype.h" />
     <ClInclude Include="pregui\Headers\startup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

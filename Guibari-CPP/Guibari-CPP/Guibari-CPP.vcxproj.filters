@@ -18,6 +18,8 @@
     <Text Include="IO\Headers\README-H.txt" />
     <Text Include="IO\Source\README-S.txt" />
     <Text Include="exceptions\EGoals.txt" />
+    <Text Include="imgui\LICENSE.txt" />
+    <Text Include="imgui\TODO.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="exceptions\Source\startup_ex.cpp">
@@ -26,10 +28,40 @@
     <ClCompile Include="pregui\Source\startup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="imgui\Source\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\Source\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\Source\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pregui\Headers\startup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="imgui\Headers\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\stb_rect_pack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\stb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\stb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui\README.md" />
   </ItemGroup>
 </Project>
