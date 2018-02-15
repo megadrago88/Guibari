@@ -115,11 +115,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="exceptions\EGoals.txt" />
     <Text Include="imgui\LICENSE.txt" />
     <Text Include="imgui\TODO.txt" />
-    <Text Include="IO\Headers\README-H.txt" />
-    <Text Include="IO\Source\README-S.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="exceptions\Source\startup_ex.cpp" />
@@ -138,7 +135,9 @@
     <ClInclude Include="pregui\Headers\startup.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="exceptions\EGoals.md" />
     <None Include="imgui\README.md" />
+    <None Include="IO\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="IO\Headers\README-H.txt" />
-    <Text Include="IO\Source\README-S.txt" />
-    <Text Include="exceptions\EGoals.txt" />
     <Text Include="imgui\LICENSE.txt" />
     <Text Include="imgui\TODO.txt" />
   </ItemGroup>
@@ -63,5 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\README.md" />
+    <None Include="exceptions\EGoals.md" />
+    <None Include="IO\README.md" />
   </ItemGroup>
 </Project>
