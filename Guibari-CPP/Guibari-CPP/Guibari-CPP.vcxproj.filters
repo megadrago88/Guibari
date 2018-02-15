@@ -34,6 +34,36 @@
     <ClCompile Include="imgui\Source\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Main\Logger\Source\startlogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\pregui\Source\startup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Externalinfo\IO\Source\config_file_IO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Externalinfo\IO\Source\Logger_IO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\config_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Logger\Logger_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\pregui\pregui_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Profiler\profiler_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Setup\setup_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Externalinfo\IO\IO_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pregui\Headers\startup.h">
@@ -57,10 +87,18 @@
     <ClInclude Include="imgui\Headers\stb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Main\Logger\Headers\startlogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\pregui\Headers\startup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\README.md" />
     <None Include="exceptions\EGoals.md" />
     <None Include="IO\README.md" />
+    <None Include="Externalinfo\IO\README.md" />
+    <None Include="Externalinfo\EGoals.md" />
   </ItemGroup>
 </Project>

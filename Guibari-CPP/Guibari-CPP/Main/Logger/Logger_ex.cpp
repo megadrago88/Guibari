@@ -1,0 +1,1 @@
+/*Holds all the exceptions logger can throw*/
