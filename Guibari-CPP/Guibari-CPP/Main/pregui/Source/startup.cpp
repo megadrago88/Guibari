@@ -18,7 +18,7 @@ startup::~startup()
 {
 }
 
-int main(){
+int sub(){
 	
 	//start logger
 
