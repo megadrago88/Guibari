@@ -28,7 +28,7 @@ int main(){
 	//checks for errors
 
 	//if all good start gui
-	Render();
+	Rendertest();
 
 	//else returns the error and stops
 
