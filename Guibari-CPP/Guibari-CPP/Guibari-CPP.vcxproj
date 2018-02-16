@@ -122,7 +122,6 @@
     <ClCompile Include="Config\Profiler\gui\profiler_gui.cpp" />
     <ClCompile Include="Config\Setup\gui\setup_gui.cpp" />
     <ClCompile Include="Config\Setup\setup_ex.cpp" />
-    <ClCompile Include="exceptions\Source\startup_ex.cpp" />
     <ClCompile Include="Externalinfo\IO\IO_ex.cpp" />
     <ClCompile Include="Externalinfo\IO\Source\Logger_IO.cpp" />
     <ClCompile Include="imgui\Source\imgui.cpp" />
@@ -136,7 +135,6 @@
     <ClCompile Include="Externalinfo\IO\Source\config_file_IO.cpp" />
     <ClCompile Include="Main\pregui\Source\startup.cpp" />
     <ClCompile Include="Main\main_ex.cpp" />
-    <ClCompile Include="pregui\Source\startup.cpp" />
     <ClCompile Include="Main\Logger\Source\startlogger.cpp" />
   </ItemGroup>
   <ItemGroup>

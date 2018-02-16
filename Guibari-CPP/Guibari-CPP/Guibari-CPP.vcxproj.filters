@@ -19,12 +19,6 @@
     <Text Include="imgui\TODO.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="exceptions\Source\startup_ex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pregui\Source\startup.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="imgui\Source\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -78,9 +72,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pregui\Headers\startup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="imgui\Headers\imconfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
