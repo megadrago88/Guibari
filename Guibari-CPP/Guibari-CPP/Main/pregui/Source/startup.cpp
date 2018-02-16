@@ -1,4 +1,5 @@
 #include "../Headers/startup.h"
+#include "../../../Config/Setup/gui/setup_gui.h"
 /*
 Summery
 Starts logger
@@ -18,7 +19,7 @@ startup::~startup()
 {
 }
 
-int sub(){
+int main(){
 	
 	//start logger
 
@@ -27,6 +28,7 @@ int sub(){
 	//checks for errors
 
 	//if all good start gui
+	Render();
 
 	//else returns the error and stops
 

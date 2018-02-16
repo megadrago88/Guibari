@@ -138,6 +138,7 @@
     <ClCompile Include="Main\Logger\Source\startlogger.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Config\Setup\gui\setup_gui.h" />
     <ClInclude Include="imgui\Headers\imconfig.h" />
     <ClInclude Include="imgui\Headers\imgui.h" />
     <ClInclude Include="imgui\Headers\imgui_internal.h" />

@@ -96,6 +96,12 @@
     <ClInclude Include="Main\pregui\Headers\startup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="pregui\Headers\startup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Setup\gui\setup_gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\README.md" />
