@@ -1,7 +1,10 @@
 #include "../Headers/startup.h"
 #include "../../../Config/Setup/gui/setup_gui.h"
+
 /*
 Summery
+USES DX9
+(Might use SFML per suggestion)
 Starts logger
 Checks current Guibari dir for {Startup_settings.(?XML??TXT?)} file and/or log folder
 if not present runs {Firsttime.cpp} and/or creates log folder
@@ -14,22 +17,24 @@ startup::startup()
 {
 }
 
-
 startup::~startup()
 {
 }
 
 int main(){
+
 	
 	//start logger
 
 	//check dir
 	
 	//checks for errors
+	if (!errors()) {
 
-	//if all good start gui
-	Rendertest();
 
+		//if all good start gui
+		Rendertest();
+	}
 	//else returns the error and stops
 
 	return 0;

@@ -67,7 +67,16 @@
     <ClCompile Include="Config\Profiler\gui\profiler_gui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Config\Setup\gui\setup_gui.cpp">
+    <ClCompile Include="Main\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Guistructor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Externalinfo\IO\IOparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui-SFML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -99,7 +108,13 @@
     <ClInclude Include="pregui\Headers\startup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Config\Setup\gui\setup_gui.h">
+    <ClInclude Include="Guistructor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Externalinfo\IO\IOparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui-SFML.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -109,5 +124,6 @@
     <None Include="IO\README.md" />
     <None Include="Externalinfo\IO\README.md" />
     <None Include="Externalinfo\EGoals.md" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
