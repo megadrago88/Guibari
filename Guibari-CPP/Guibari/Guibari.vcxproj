@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{9D4B7234-9A8C-49AE-9829-2AE55766CA86}</ProjectGuid>
-    <RootNamespace>GuibariCore</RootNamespace>
+    <ProjectGuid>{40249CDC-2A3B-44BA-8070-D77FAEFE3A56}</ProjectGuid>
+    <RootNamespace>Guibari</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,24 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="IO\config_file_IO.cpp" />
-    <ClCompile Include="IO\IOparser.cpp" />
-    <ClCompile Include="IO\IO_ex.cpp" />
-    <ClCompile Include="IO\Source\config_file_IO.cpp" />
-    <ClCompile Include="IO\Source\Logger_IO.cpp" />
-    <ClCompile Include="Logger_IO.cpp" />
-    <ClCompile Include="Main\main.cpp" />
-    <ClCompile Include="Main\main_ex.cpp" />
-    <ClCompile Include="Main\pregui\pregui_ex.cpp" />
-    <ClCompile Include="Main\pregui\Source\startup.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="IO\IOparser.h" />
     <ClInclude Include="Main\pregui\Headers\startup.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="EGoals.md" />
-    <None Include="IO\README.md" />
+    <ClCompile Include="Main\main_ex.cpp" />
+    <ClCompile Include="Main\pregui\pregui_ex.cpp" />
+    <ClCompile Include="Main\pregui\Source\startup.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
