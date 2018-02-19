@@ -1,3 +1,4 @@
+
 #include "../../Guibari.Plugins/imgui/Headers/imgui.h"
 #include "../../Guibari.Plugins/imgui/imgui-SFML.h"
 
@@ -62,4 +63,5 @@ int main()
 	}
 
 	ImGui::SFML::Shutdown();
+	return 0;
 }
