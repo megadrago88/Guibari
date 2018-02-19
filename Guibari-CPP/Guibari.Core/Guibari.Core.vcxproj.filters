@@ -57,5 +57,6 @@
   <ItemGroup>
     <None Include="EGoals.md" />
     <None Include="IO\README.md" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

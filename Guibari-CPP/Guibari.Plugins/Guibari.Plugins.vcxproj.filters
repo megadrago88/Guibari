@@ -57,5 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\README.md" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Guibari.Plugins.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
