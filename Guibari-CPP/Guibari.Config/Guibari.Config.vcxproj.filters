@@ -15,16 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Config\Profiler\gui\profiler_gui.cpp">
+    <ClCompile Include="Profiler\profiler_ex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Config\Profiler\profiler_ex.cpp">
+    <ClCompile Include="Setup\setup_ex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Config\Setup\setup_ex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Config\config_ex.cpp">
+    <ClCompile Include="config_ex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

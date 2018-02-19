@@ -115,10 +115,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Config\config_ex.cpp" />
-    <ClCompile Include="Config\Profiler\gui\profiler_gui.cpp" />
-    <ClCompile Include="Config\Profiler\profiler_ex.cpp" />
-    <ClCompile Include="Config\Setup\setup_ex.cpp" />
+    <ClCompile Include="config_ex.cpp" />
+    <ClCompile Include="Profiler\profiler_ex.cpp" />
+    <ClCompile Include="Setup\setup_ex.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

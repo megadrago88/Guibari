@@ -15,53 +15,47 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="imgui\Headers\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\stb_rect_pack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\stb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Headers\stb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui-SFML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="imgui\Source\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="imgui\Source\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main\pregui\Source\startup.cpp">
+    <ClCompile Include="imgui\Source\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main\pregui\pregui_ex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main\main_ex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IO\Source\config_file_IO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IO\Source\Logger_IO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IO\IO_ex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IO\IOparser.cpp">
+    <ClCompile Include="imgui\imgui-SFML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Main\pregui\Headers\startup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pregui\Headers\startup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IO\IOparser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <Text Include="imgui\LICENSE.txt" />
+    <Text Include="imgui\TODO.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="exceptions\EGoals.md" />
-    <None Include="IO\README.md" />
-    <None Include="packages.config" />
-    <None Include="IO\README.md" />
-    <None Include="EGoals.md" />
+    <None Include="imgui\README.md" />
   </ItemGroup>
 </Project>

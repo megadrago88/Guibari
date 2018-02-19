@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{A69995A1-B19D-4B84-AFA7-0ED5D1A83A28}</ProjectGuid>
-    <RootNamespace>GuibariLogger</RootNamespace>
+    <ProjectGuid>{54DDE0F5-40AC-4475-A0ED-5AE3CCA96F83}</ProjectGuid>
+    <RootNamespace>GuibariPlugins</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,11 +115,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\startlogger.h" />
+    <ClInclude Include="imgui\Headers\imconfig.h" />
+    <ClInclude Include="imgui\Headers\imgui.h" />
+    <ClInclude Include="imgui\Headers\imgui_internal.h" />
+    <ClInclude Include="imgui\Headers\stb_rect_pack.h" />
+    <ClInclude Include="imgui\Headers\stb_textedit.h" />
+    <ClInclude Include="imgui\Headers\stb_truetype.h" />
+    <ClInclude Include="imgui\imgui-SFML.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Logger_ex.cpp" />
-    <ClCompile Include="Source\startlogger.cpp" />
+    <ClCompile Include="imgui\imgui-SFML.cpp" />
+    <ClCompile Include="imgui\Source\imgui.cpp" />
+    <ClCompile Include="imgui\Source\imgui_demo.cpp" />
+    <ClCompile Include="imgui\Source\imgui_draw.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="imgui\LICENSE.txt" />
+    <Text Include="imgui\TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
