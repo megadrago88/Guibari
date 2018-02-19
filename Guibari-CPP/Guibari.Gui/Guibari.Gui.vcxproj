@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EC3E0757-65BE-4535-A3B3-172AF1F61C60}</ProjectGuid>
-    <RootNamespace>GuibariCPP</RootNamespace>
+    <ProjectGuid>{7AE57CBC-73CD-4C81-8579-F88EB9BD5F3F}</ProjectGuid>
+    <RootNamespace>GuibariGui</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,56 +115,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Externalinfo\IO\IOparser.cpp" />
-    <ClCompile Include="Externalinfo\IO\IO_ex.cpp" />
-    <ClCompile Include="Externalinfo\IO\Source\Logger_IO.cpp" />
+    <ClCompile Include="Guistructor.cpp" />
+    <ClCompile Include="imgui\imgui-SFML.cpp" />
     <ClCompile Include="imgui\Source\imgui.cpp" />
     <ClCompile Include="imgui\Source\imgui_demo.cpp" />
-    <ClCompile Include="Main\gui\maingui.cpp" />
-    <ClCompile Include="Main\pregui\pregui_ex.cpp" />
-    <ClCompile Include="Externalinfo\IO\Source\config_file_IO.cpp" />
-    <ClCompile Include="Main\pregui\Source\startup.cpp" />
-    <ClCompile Include="Main\main_ex.cpp" />
-    <ClCompile Include="Main\main.cpp" />
+    <ClCompile Include="imgui\Source\imgui_draw.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Externalinfo\IO\IOparser.h" />
-    <ClInclude Include="Main\pregui\Headers\startup.h" />
-    <ClInclude Include="pregui\Headers\startup.h" />
+    <ClInclude Include="Guistructor.h" />
+    <ClInclude Include="imgui\Headers\imconfig.h" />
+    <ClInclude Include="imgui\Headers\imgui.h" />
+    <ClInclude Include="imgui\Headers\imgui_internal.h" />
+    <ClInclude Include="imgui\Headers\stb_rect_pack.h" />
+    <ClInclude Include="imgui\Headers\stb_textedit.h" />
+    <ClInclude Include="imgui\Headers\stb_truetype.h" />
+    <ClInclude Include="imgui\imgui-SFML.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="exceptions\EGoals.md" />
-    <None Include="IO\README.md" />
-    <None Include="Externalinfo\EGoals.md" />
-    <None Include="Externalinfo\IO\README.md" />
-    <None Include="packages.config" />
+    <Text Include="imgui\LICENSE.txt" />
+    <Text Include="imgui\TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\sfml-system.redist.2.4.2.0\build\native\sfml-system.redist.targets" Condition="Exists('..\packages\sfml-system.redist.2.4.2.0\build\native\sfml-system.redist.targets')" />
-    <Import Project="..\packages\sfml-system.2.4.2.0\build\native\sfml-system.targets" Condition="Exists('..\packages\sfml-system.2.4.2.0\build\native\sfml-system.targets')" />
-    <Import Project="..\packages\sfml-window.redist.2.4.2.0\build\native\sfml-window.redist.targets" Condition="Exists('..\packages\sfml-window.redist.2.4.2.0\build\native\sfml-window.redist.targets')" />
-    <Import Project="..\packages\sfml-window.2.4.2.0\build\native\sfml-window.targets" Condition="Exists('..\packages\sfml-window.2.4.2.0\build\native\sfml-window.targets')" />
-    <Import Project="..\packages\sfml-graphics.redist.2.4.2.0\build\native\sfml-graphics.redist.targets" Condition="Exists('..\packages\sfml-graphics.redist.2.4.2.0\build\native\sfml-graphics.redist.targets')" />
-    <Import Project="..\packages\sfml-graphics.2.4.2.0\build\native\sfml-graphics.targets" Condition="Exists('..\packages\sfml-graphics.2.4.2.0\build\native\sfml-graphics.targets')" />
-    <Import Project="..\packages\sfml-audio.redist.2.4.2.0\build\native\sfml-audio.redist.targets" Condition="Exists('..\packages\sfml-audio.redist.2.4.2.0\build\native\sfml-audio.redist.targets')" />
-    <Import Project="..\packages\sfml-audio.2.4.2.0\build\native\sfml-audio.targets" Condition="Exists('..\packages\sfml-audio.2.4.2.0\build\native\sfml-audio.targets')" />
-    <Import Project="..\packages\sfml-network.redist.2.4.2.0\build\native\sfml-network.redist.targets" Condition="Exists('..\packages\sfml-network.redist.2.4.2.0\build\native\sfml-network.redist.targets')" />
-    <Import Project="..\packages\sfml-network.2.4.2.0\build\native\sfml-network.targets" Condition="Exists('..\packages\sfml-network.2.4.2.0\build\native\sfml-network.targets')" />
   </ImportGroup>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\sfml-system.redist.2.4.2.0\build\native\sfml-system.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-system.redist.2.4.2.0\build\native\sfml-system.redist.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-system.2.4.2.0\build\native\sfml-system.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-system.2.4.2.0\build\native\sfml-system.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-window.redist.2.4.2.0\build\native\sfml-window.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-window.redist.2.4.2.0\build\native\sfml-window.redist.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-window.2.4.2.0\build\native\sfml-window.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-window.2.4.2.0\build\native\sfml-window.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-graphics.redist.2.4.2.0\build\native\sfml-graphics.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-graphics.redist.2.4.2.0\build\native\sfml-graphics.redist.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-graphics.2.4.2.0\build\native\sfml-graphics.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-graphics.2.4.2.0\build\native\sfml-graphics.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-audio.redist.2.4.2.0\build\native\sfml-audio.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-audio.redist.2.4.2.0\build\native\sfml-audio.redist.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-audio.2.4.2.0\build\native\sfml-audio.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-audio.2.4.2.0\build\native\sfml-audio.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-network.redist.2.4.2.0\build\native\sfml-network.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-network.redist.2.4.2.0\build\native\sfml-network.redist.targets'))" />
-    <Error Condition="!Exists('..\packages\sfml-network.2.4.2.0\build\native\sfml-network.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sfml-network.2.4.2.0\build\native\sfml-network.targets'))" />
-  </Target>
 </Project>
