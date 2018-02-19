@@ -1,6 +1,6 @@
 #include "imgui-SFML.h"
-#include "../../imgui/Headers/imgui.h"
-
+//#include "../../imgui/Headers/imgui.h"
+#include <imgui.h>
 #include <SFML/OpenGL.hpp>
 #include <SFML/Graphics/Color.hpp>
 #include <SFML/Graphics/RenderTarget.hpp>
@@ -315,8 +315,8 @@ void Shutdown()
         delete s_fontTexture;
         s_fontTexture = NULL;
     }
-
-    ImGui::DestroyContext(); // need to specify namespace here, otherwise ImGui::SFML::Shutdown would be called
+	ImGui::SFML::Shutdown();
+//    ImGui::DestroyContext(); // need to specify namespace here, otherwise ImGui::SFML::Shutdown would be called
 }
 
 void UpdateFontTexture()
