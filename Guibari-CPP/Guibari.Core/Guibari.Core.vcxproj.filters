@@ -15,24 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="imgui\Source\imgui.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\Source\imgui_demo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main\pregui\Source\startup.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main\pregui\pregui_ex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main\main_ex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="IO\Source\config_file_IO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -45,23 +27,29 @@
     <ClCompile Include="IO\IOparser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Main\pregui\Source\startup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\pregui\pregui_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\main_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Main\pregui\Headers\startup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pregui\Headers\startup.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="IO\IOparser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Main\pregui\Headers\startup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="exceptions\EGoals.md" />
-    <None Include="IO\README.md" />
-    <None Include="packages.config" />
-    <None Include="IO\README.md" />
     <None Include="EGoals.md" />
+    <None Include="IO\README.md" />
   </ItemGroup>
 </Project>

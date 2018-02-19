@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guibari.Core", "Guibari-CPP\Guibari-CPP.vcxproj", "{EC3E0757-65BE-4535-A3B3-172AF1F61C60}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guibari.Gui", "Guibari.Gui\Guibari.Gui.vcxproj", "{7AE57CBC-73CD-4C81-8579-F88EB9BD5F3F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guibari.Logger", "Guibari.Logger\Guibari.Logger.vcxproj", "{A69995A1-B19D-4B84-AFA7-0ED5D1A83A28}"
@@ -12,6 +10,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guibari.Config", "Guibari.Config\Guibari.Config.vcxproj", "{930FD401-353D-44FB-A3E1-BA605234B898}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guibari.Plugins", "Guibari.Plugins\Guibari.Plugins.vcxproj", "{54DDE0F5-40AC-4475-A0ED-5AE3CCA96F83}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guibari.Core", "Guibari.Core\Guibari.Core.vcxproj", "{9D4B7234-9A8C-49AE-9829-2AE55766CA86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,14 +21,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC3E0757-65BE-4535-A3B3-172AF1F61C60}.Debug|x64.ActiveCfg = Debug|x64
-		{EC3E0757-65BE-4535-A3B3-172AF1F61C60}.Debug|x64.Build.0 = Debug|x64
-		{EC3E0757-65BE-4535-A3B3-172AF1F61C60}.Debug|x86.ActiveCfg = Debug|Win32
-		{EC3E0757-65BE-4535-A3B3-172AF1F61C60}.Debug|x86.Build.0 = Debug|Win32
-		{EC3E0757-65BE-4535-A3B3-172AF1F61C60}.Release|x64.ActiveCfg = Release|x64
-		{EC3E0757-65BE-4535-A3B3-172AF1F61C60}.Release|x64.Build.0 = Release|x64
-		{EC3E0757-65BE-4535-A3B3-172AF1F61C60}.Release|x86.ActiveCfg = Release|Win32
-		{EC3E0757-65BE-4535-A3B3-172AF1F61C60}.Release|x86.Build.0 = Release|Win32
 		{7AE57CBC-73CD-4C81-8579-F88EB9BD5F3F}.Debug|x64.ActiveCfg = Debug|x64
 		{7AE57CBC-73CD-4C81-8579-F88EB9BD5F3F}.Debug|x64.Build.0 = Debug|x64
 		{7AE57CBC-73CD-4C81-8579-F88EB9BD5F3F}.Debug|x86.ActiveCfg = Debug|Win32
@@ -61,6 +53,14 @@ Global
 		{54DDE0F5-40AC-4475-A0ED-5AE3CCA96F83}.Release|x64.Build.0 = Release|x64
 		{54DDE0F5-40AC-4475-A0ED-5AE3CCA96F83}.Release|x86.ActiveCfg = Release|Win32
 		{54DDE0F5-40AC-4475-A0ED-5AE3CCA96F83}.Release|x86.Build.0 = Release|Win32
+		{9D4B7234-9A8C-49AE-9829-2AE55766CA86}.Debug|x64.ActiveCfg = Debug|x64
+		{9D4B7234-9A8C-49AE-9829-2AE55766CA86}.Debug|x64.Build.0 = Debug|x64
+		{9D4B7234-9A8C-49AE-9829-2AE55766CA86}.Debug|x86.ActiveCfg = Debug|Win32
+		{9D4B7234-9A8C-49AE-9829-2AE55766CA86}.Debug|x86.Build.0 = Debug|Win32
+		{9D4B7234-9A8C-49AE-9829-2AE55766CA86}.Release|x64.ActiveCfg = Release|x64
+		{9D4B7234-9A8C-49AE-9829-2AE55766CA86}.Release|x64.Build.0 = Release|x64
+		{9D4B7234-9A8C-49AE-9829-2AE55766CA86}.Release|x86.ActiveCfg = Release|Win32
+		{9D4B7234-9A8C-49AE-9829-2AE55766CA86}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
