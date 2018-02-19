@@ -115,12 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Main\pregui\Headers\startup.h" />
+    <ClInclude Include="Main\Headers\startup.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main\main_ex.cpp" />
-    <ClCompile Include="Main\pregui\pregui_ex.cpp" />
-    <ClCompile Include="Main\pregui\Source\startup.cpp" />
+    <ClCompile Include="Main\Source\main_ex.cpp" />
+    <ClCompile Include="Main\Source\pregui_ex.cpp" />
+    <ClCompile Include="Main\Source\startup.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
