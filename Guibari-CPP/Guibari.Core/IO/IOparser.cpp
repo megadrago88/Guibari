@@ -6,3 +6,6 @@ int StartIO() {
 bool IOparseerror() {
 	return true;
 }
+int main() {
+	return 0;
+}

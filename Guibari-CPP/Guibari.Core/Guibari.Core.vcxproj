@@ -118,17 +118,10 @@
     <ClCompile Include="IO\config_file_IO.cpp" />
     <ClCompile Include="IO\IOparser.cpp" />
     <ClCompile Include="IO\IO_ex.cpp" />
-    <ClCompile Include="IO\Source\config_file_IO.cpp" />
-    <ClCompile Include="IO\Source\Logger_IO.cpp" />
     <ClCompile Include="Logger_IO.cpp" />
-    <ClCompile Include="Main\main.cpp" />
-    <ClCompile Include="Main\main_ex.cpp" />
-    <ClCompile Include="Main\pregui\pregui_ex.cpp" />
-    <ClCompile Include="Main\pregui\Source\startup.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IO\IOparser.h" />
-    <ClInclude Include="Main\pregui\Headers\startup.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="EGoals.md" />

@@ -1,5 +1,4 @@
 #include "../Headers/startup.h"
-#include "../../../Config/Setup/gui/setup_gui.h"
 
 /*
 Summery

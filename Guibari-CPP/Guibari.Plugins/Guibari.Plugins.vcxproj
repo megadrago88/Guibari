@@ -128,6 +128,7 @@
     <ClCompile Include="imgui\Source\imgui.cpp" />
     <ClCompile Include="imgui\Source\imgui_demo.cpp" />
     <ClCompile Include="imgui\Source\imgui_draw.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="imgui\LICENSE.txt" />
@@ -136,9 +137,6 @@
   <ItemGroup>
     <None Include="imgui\README.md" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Guibari.Plugins.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,5 @@
-#include "../../imgui/Headers/imgui.h"
-#include "../../imgui/imgui-SFML.h"
+#include "../../Guibari.Plugins/imgui/Headers/imgui.h"
+#include "../../Guibari.Plugins/imgui/imgui-SFML.h"
 
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Clock.hpp>
