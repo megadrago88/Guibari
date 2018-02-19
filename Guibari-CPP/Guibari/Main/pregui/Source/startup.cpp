@@ -28,12 +28,12 @@ int main(){
 	//check dir
 	
 	//checks for errors
-	if (!errors()) {
+	
 
 
 		//if all good start gui
-		Rendertest();
-	}
+		
+	
 	//else returns the error and stops
 
 	return 0;

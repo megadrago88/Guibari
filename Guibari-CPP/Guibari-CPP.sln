@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guibari.Gui", "Guibari.Gui\Guibari.Gui.vcxproj", "{7AE57CBC-73CD-4C81-8579-F88EB9BD5F3F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{54DDE0F5-40AC-4475-A0ED-5AE3CCA96F83} = {54DDE0F5-40AC-4475-A0ED-5AE3CCA96F83}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guibari.Logger", "Guibari.Logger\Guibari.Logger.vcxproj", "{A69995A1-B19D-4B84-AFA7-0ED5D1A83A28}"
 EndProject
