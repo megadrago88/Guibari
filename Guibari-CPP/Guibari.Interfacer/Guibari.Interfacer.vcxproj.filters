@@ -38,5 +38,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="EGoals.md" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
