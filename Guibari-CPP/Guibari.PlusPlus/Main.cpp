@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
-
-int main()
+#include <Windows.h>
+int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
+	PSTR lpCmdLine, INT nCmdShow)
 {
 	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
 	sf::CircleShape shape(100.f);
