@@ -1,1 +1,0 @@
-Can take input from (Airbender,Shibari,Fireshock,etc.)
