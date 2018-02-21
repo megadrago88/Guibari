@@ -11,13 +11,14 @@
 #pragma comment(lib,"dwmapi.lib")//Acts like I had put it in linker
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
-	PSTR szCmdLine, INT iCmdShow)
+	PSTR lpCmdLine, INT nCmdShow)
 {
-	sf::RenderWindow window(sf::VideoMode(640, 480), "", sf::Style::None);
+
+	sf::RenderWindow window(sf::VideoMode(640, 480), "",sf::Style::None);
 	window.setVerticalSyncEnabled(true);
 	window.setFramerateLimit(60);//cap at 60 
-	ImGui::SFML::Init(window);
-	
+	ImGui::SFML::Init(window);	
+
 	/*
 	Transparent "mode" using DWM
 	*/
@@ -25,6 +26,15 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	margins.cxLeftWidth = -1;
 	SetWindowLong(window.getSystemHandle(), GWL_STYLE, WS_POPUP | WS_VISIBLE);
 	DwmExtendFrameIntoClientArea(window.getSystemHandle(), &margins);
+	
+	/*TODO: ADD way to stop it from going out of bounds
+	get size of imgui window
+	get size of screen
+	get current pos
+	get prev. pos and calc a vector of their difference
+	or calc it's distance to max screen size
+	or calc the diffrence between end of window and screen and =< 0 reset to previous position (or the end of the screen) TEST THIS!
+	*/
 
 	sf::Color bgColor;
 
@@ -50,6 +60,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		ImGui::SFML::Update(window, deltaClock.restart());
 
 		ImGui::Begin("Sample window"); // begin window
+
 
 									   // Background color edit
 		if (ImGui::ColorEdit3("Background color", color)) {
