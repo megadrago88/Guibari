@@ -19,7 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Imgui\imgui.cpp" />
+    <ClCompile Include="Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Imgui\SFML\imgui-SFML.cpp" />
     <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Imgui\SFML\imgui-SFML.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imgui\SFML\README.md" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -73,10 +83,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Linkables\SFML-2.4.2\include</IncludePath>
+    <IncludePath>C:\Linkables\imgui-1.53;$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Linkables\SFML-2.4.2\include</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Linkables\SFML-2.4.2\include</IncludePath>
+    <IncludePath>C:\Linkables\imgui-1.53;$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Linkables\SFML-2.4.2\include</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
