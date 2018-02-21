@@ -32,7 +32,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 	// let's use char array as buffer, see next part
 	// for instructions on using std::string with ImGui
-	char windowTitle[255] = "ImGui + SFML = <3";
+	char windowTitle[255] = "testwindow";
 
 	window.setTitle(windowTitle);
 	window.resetGLStates(); // call it if you only draw ImGui. Otherwise not needed.
