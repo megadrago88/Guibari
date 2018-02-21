@@ -2,17 +2,29 @@
 #include "Imgui\SFML\imgui-SFML.h"
 
 #include <Windows.h>
+#include <dwmapi.h>
 
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Clock.hpp>
 #include <SFML/Window/Event.hpp>
 
-int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
-	PSTR lpCmdLine, INT nCmdShow)
+#pragma comment(lib,"dwmapi.lib")//Acts like I had put it in linker
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
+	PSTR szCmdLine, INT iCmdShow)
 {
-	sf::RenderWindow window(sf::VideoMode(640, 480), "");
+	sf::RenderWindow window(sf::VideoMode(640, 480), "", sf::Style::None);
 	window.setVerticalSyncEnabled(true);
+	window.setFramerateLimit(60);//cap at 60 
 	ImGui::SFML::Init(window);
+	
+	/*
+	Transparent "mode" using DWM
+	*/
+	MARGINS margins;
+	margins.cxLeftWidth = -1;
+	SetWindowLong(window.getSystemHandle(), GWL_STYLE, WS_POPUP | WS_VISIBLE);
+	DwmExtendFrameIntoClientArea(window.getSystemHandle(), &margins);
 
 	sf::Color bgColor;
 
