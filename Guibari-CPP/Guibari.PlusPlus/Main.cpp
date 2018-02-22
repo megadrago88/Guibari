@@ -28,25 +28,20 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	DwmExtendFrameIntoClientArea(window.getSystemHandle(), &margins);
 	
 	/*TODO: ADD way to stop it from going out of bounds
-	get size of imgui window
-	get size of screen
-	get current pos
-	get prev. pos and calc a vector of their difference
-	or calc it's distance to max screen size
-	or calc the diffrence between end of window and screen and =< 0 reset to previous position (or the end of the screen) TEST THIS!
+		get size of imgui window
+		get size of screen
+		get current pos
+		get prev. pos and calc a vector of their difference
+		or calc it's distance to max screen size
+		or calc the diffrence between end of window and screen and =< 0 reset to previous position (or the end of the screen) TEST THIS!
+		or (MOST LIKELY) have it snap back within bounds but at the same y-position as out of bounds (Right and left sides) or the same x-position inbounds ad out of bounds (Top and bottom)
 	*/
 
-	sf::Color bgColor;
-
-	float color[3] = { 0.f, 0.f, 0.f };
-
-	// let's use char array as buffer, see next part
-	// for instructions on using std::string with ImGui
-	char windowTitle[255] = "testwindow";
-
-	window.setTitle(windowTitle);
 	window.resetGLStates(); // call it if you only draw ImGui. Otherwise not needed.
 	sf::Clock deltaClock;
+	sf::Vector2i grabbedOffset;
+	bool grabbedWindow = false;
+	bool isOpen = true;
 	while (window.isOpen()) {
 		sf::Event event;
 		while (window.pollEvent(event)) {
@@ -55,34 +50,43 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 			if (event.type == sf::Event::Closed) {
 				window.close();
 			}
+			else if (event.type == sf::Event::KeyPressed)
+			{
+				if (event.key.code == sf::Keyboard::Escape)
+					window.close();
+			}
+			else if (event.type == sf::Event::MouseButtonPressed)
+			{
+				if (event.mouseButton.button == sf::Mouse::Left)
+				{
+					grabbedOffset = window.getPosition() - sf::Mouse::getPosition();
+					grabbedWindow = true;
+				}
+			}
+			else if (event.type == sf::Event::MouseButtonReleased)
+			{
+				if (event.mouseButton.button == sf::Mouse::Left)
+					grabbedWindow = false;
+			}
+			else if (event.type == sf::Event::MouseMoved)
+			{
+				if (grabbedWindow)
+					window.setPosition(sf::Mouse::getPosition() + grabbedOffset);
+			}
 		}
 
 		ImGui::SFML::Update(window, deltaClock.restart());
+		ImGui::SetNextWindowSize(ImVec2(400,400));
+		ImGui::SetNextWindowPosCenter();
+		ImGui::Begin("Guibari",&isOpen,ImVec2(400,400),1.0f,ImGuiWindowFlags_NoCollapse|ImGuiWindowFlags_NoResize|ImGuiWindowFlags_MenuBar|ImGuiWindowFlags_NoSavedSettings); // begin window
+		
+		if (!isOpen) break;
 
-		ImGui::Begin("Sample window"); // begin window
 
 
-									   // Background color edit
-		if (ImGui::ColorEdit3("Background color", color)) {
-			// this code gets called if color value changes, so
-			// the background color is upgraded automatically!
-			bgColor.r = static_cast<sf::Uint8>(color[0] * 255.f);
-			bgColor.g = static_cast<sf::Uint8>(color[1] * 255.f);
-			bgColor.b = static_cast<sf::Uint8>(color[2] * 255.f);
-		}
-
-		// Window title text edit
-		ImGui::InputText("Window title", windowTitle, 255);
-
-		if (ImGui::Button("Update window title")) {
-			// this code gets if user clicks on the button
-			// yes, you could have written if(ImGui::InputText(...))
-			// but I do this to show how buttons work :)
-			window.setTitle(windowTitle);
-		}
 		ImGui::End(); // end window
 
-		window.clear(bgColor); // fill background with color
+		window.clear(sf::Color::Transparent); // fill background with color
 		ImGui::SFML::Render(window);
 		window.display();
 	}
