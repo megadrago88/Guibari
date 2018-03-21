@@ -23,7 +23,7 @@ namespace HalibutLogComs
         public void StartClient()
         {
             var DaClient = new HalibutRuntime(Configuration.ClientCertificate);
-            var DaService = DaClient.CreateClient<ITestService>(new ServiceEndPoint(new Uri("https://localhost:1337"), Configuration.ServerCertificate.Thumbprint));
+            var DaService = DaClient.CreateClient<ITestService>(Configuration.ClientEndpoint, Configuration.ServerCertificate.Thumbprint);
             var IntTester = DaService.Add(1, 5);
             var StringSender = DaService.Send("Hi mom");
         }

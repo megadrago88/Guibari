@@ -14,7 +14,7 @@ namespace HalibutLogComs
                 .WriteTo.Console()
                 .CreateLogger();
             TestDaService SS = new TestDaService();
-            SS.StartServer();
+           // SS.StartServer();
             SS.StartClient();
             Console.ReadKey();
         }

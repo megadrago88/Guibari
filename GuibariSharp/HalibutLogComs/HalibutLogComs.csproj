@@ -34,13 +34,20 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Shibari Files\Certificates\Shibari.IPC.Client.cer" />
+    <None Include="Shibari Files\Certificates\Shibari.IPC.Client.pfx" />
+    <None Include="Shibari Files\Certificates\Shibari.IPC.Client.pvk" />
+    <None Include="Shibari Files\Certificates\Shibari.IPC.Server.cer" />
+    <None Include="Shibari Files\Certificates\Shibari.IPC.Server.pfx" />
+    <None Include="Shibari Files\Certificates\Shibari.IPC.Server.pvk" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionGen.cs" />
     <Compile Include="ITestService.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="TestDaService.cs" />
-    <Compile Include="TestService.cs" />
+    <Compile Include="Shibari Files\Refrenced Files\Configuration.cs" />
+    <Compile Include="Testing\Program.cs" />
+    <Compile Include="Testing\TestDaService.cs" />
+    <Compile Include="Testing\TestService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Halibut, Version=3.0.4.0, Culture=neutral, processorArchitecture=MSIL">
@@ -59,11 +66,13 @@
     <Reference Include="Serilog.Sinks.Console, Version=3.1.1.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
       <HintPath>..\packages\Serilog.Sinks.Console.3.1.1\lib\net45\Serilog.Sinks.Console.dll</HintPath>
     </Reference>
-    <Reference Include="Shibari.Sub.Core">
+    <Reference Include="Shibari.Sub.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\ShibariFork\bin\Shibari.Sub.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
