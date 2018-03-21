@@ -16,6 +16,7 @@ namespace HalibutLogComs
 
         public string Send(string s)
         {
+            Log.Information("Returning string {s}", s);
             return s;
         }
     }
