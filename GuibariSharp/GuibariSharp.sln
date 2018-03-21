@@ -6,15 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuibariForm", "GuibariForm\GuibariForm.csproj", "{8186D233-B9D5-4760-9B04-D01B1B0822A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Experamental", "Experamental", "{6E6B5814-97F7-4D47-82DA-D0F9F360DC15}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Configuration.cs = ..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Configuration.cs
-		..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Client.cer = ..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Client.cer
-		..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Client.pfx = ..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Client.pfx
-		..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Client.pvk = ..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Client.pvk
-		..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Server.cer = ..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Server.cer
-		..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Server.pfx = ..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Server.pfx
-		..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Server.pvk = ..\..\ShibariFork\Shibari.Sub.Core\Shared\IPC\Certificates\Shibari.IPC.Server.pvk
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalibutLogComs", "HalibutLogComs\HalibutLogComs.csproj", "{D9D7295F-1A08-46AC-A918-059E3118131E}"
 EndProject

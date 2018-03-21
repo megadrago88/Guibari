@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionGen.cs" />
-    <Compile Include="ITestService.cs" />
+    <Compile Include="Testing\ITestService.cs" />
     <Compile Include="Shibari Files\Refrenced Files\Configuration.cs" />
     <Compile Include="Testing\Program.cs" />
     <Compile Include="Testing\TestDaService.cs" />
